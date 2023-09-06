@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import kotlin.collections.ArrayList
 
 var act = "gg"
-var citta = "gg"
+var citta = "guhzedhgu"
 
 class BresciaActivity : ComponentActivity()
 {
