@@ -16,7 +16,7 @@ class BresciaActivity : ComponentActivity()
 {
     private lateinit var newRecylerview : RecyclerView
     private lateinit var newArrayList : ArrayList<Montagna>
-    private lateinit var link : Array<String>
+
 
     override fun onCreate(savedInstanceState: Bundle?)
     {
@@ -28,7 +28,7 @@ class BresciaActivity : ComponentActivity()
         newRecylerview = findViewById(R.id.recyclerView)
         newRecylerview.layoutManager = LinearLayoutManager(this)
         newRecylerview.setHasFixedSize(true)
-        newArrayList = arrayListOf<Montagna>()
+        newArrayList = arrayListOf()
         getUserdata()
 
     }
@@ -47,64 +47,47 @@ class BresciaActivity : ComponentActivity()
                     "https://www.ferrate365.it/vie-ferrate/ferrata-terzulli-adamello/"))
                 newArrayList.add(Montagna(R.drawable.guglielmo,"Guglielmo da Zone","3.45 h ","Zone",
                     "https://visitlakeiseo.info/sport-e-natura/trekking-da-zone-al-monte-guglielmo/"))
-                newArrayList.add(Montagna(R.drawable.resegone,"Resegone da Lecco","3 h ","Lecco",
-                    "https://www.trekkinglecco.com/resegone-piazzale-funivia-lecco-sentiero-1/"))
-                newArrayList.add(Montagna(R.drawable.pizzococa,"Pizzo Coca ","10 h ","Valbondione",
-                    "https://www.maxpiantoni.it/foto-sui-sentieri-orobici/escursione-al-pizzo-coca.html "))
-                newArrayList.add(Montagna(R.drawable.pizzoarera,"Pizzo Arera ","7 h ","Zambla alta ",
-                    "https://www.valbrembanaweb.com/valbrembanaweb/monti/arera.html "))
                 newArrayList.add(Montagna(R.drawable.cornatrentapassi,"Corna Trentapassi ","1.5 h ","Zone",
                     "https://visitlakeiseo.info/sport-e-natura/trekking-da-zone-alla-corna-trentapassi/ "))
-                newArrayList.add(Montagna(R.drawable.laghigemelli,"Laghi gemelli ","5 h ","Carona",
-                    "https://lemontagne.net/laghi-gemelli/ "))
-                newArrayList.add(Montagna(R.drawable.pizzobecco,"Ferrata pizzo del becco ","2 h ","Rif laghi gemelli ",
-                    "https://www.ferrate365.it/vie-ferrate/ferrata-pizzo-becco/#foto "))
-                newArrayList.add(Montagna(R.drawable.pizzocamino,"Pizzo camino normale ","6.5 h ","Schilpario",
-                    "https://www.vienormali.it/montagna/cima_scheda.asp?cod=713 "))
+
+
             }
 
             "trekking" ->
             {
-                newArrayList.add(Montagna(R.drawable.adamello,"Via trekking e Terzulli","11 h ","Val d'Avio",
+                newArrayList.add(Montagna(R.drawable.adamello,"Via passeggiata e Terzulli","11 h ","Val d'Avio",
                     "https://www.ferrate365.it/vie-ferrate/ferrata-terzulli-adamello/"))
                 newArrayList.add(Montagna(R.drawable.guglielmo,"Guglielmo da Zone","3.45 h ","Zone",
                     "https://visitlakeiseo.info/sport-e-natura/trekking-da-zone-al-monte-guglielmo/"))
-                newArrayList.add(Montagna(R.drawable.resegone,"Resegone da Lecco","3 h ","Lecco",
-                    "https://www.trekkinglecco.com/resegone-piazzale-funivia-lecco-sentiero-1/"))
-                newArrayList.add(Montagna(R.drawable.pizzococa,"Pizzo Coca ","10 h ","Valbondione",
-                    "https://www.maxpiantoni.it/foto-sui-sentieri-orobici/escursione-al-pizzo-coca.html "))
-                newArrayList.add(Montagna(R.drawable.pizzoarera,"Pizzo Arera ","7 h ","Zambla alta ",
-                    "https://www.valbrembanaweb.com/valbrembanaweb/monti/arera.html "))
                 newArrayList.add(Montagna(R.drawable.cornatrentapassi,"Corna Trentapassi ","1.5 h ","Zone",
                     "https://visitlakeiseo.info/sport-e-natura/trekking-da-zone-alla-corna-trentapassi/ "))
-                newArrayList.add(Montagna(R.drawable.laghigemelli,"Laghi gemelli ","5 h ","Carona",
-                    "https://lemontagne.net/laghi-gemelli/ "))
-                newArrayList.add(Montagna(R.drawable.pizzobecco,"Ferrata pizzo del becco ","2 h ","Rif laghi gemelli ",
-                    "https://www.ferrate365.it/vie-ferrate/ferrata-pizzo-becco/#foto "))
-                newArrayList.add(Montagna(R.drawable.pizzocamino,"Pizzo camino normale ","6.5 h ","Schilpario",
-                    "https://www.vienormali.it/montagna/cima_scheda.asp?cod=713 "))
+                newArrayList.add(Montagna(R.drawable.cimalaione,"Cima Laione ","7 h ","Bazena",
+                    "https://www.vienormali.it/montagna/cima_scheda.asp?cod=3327"))
+                newArrayList.add(Montagna(R.drawable.cimalaione,"Cima Laione ","7 h ","Bazena",
+                    "https://www.vienormali.it/montagna/cima_scheda.asp?cod=3327"))
+
+                //newArrayList.add(Montagna(R.drawable.," "," ","", ""))
+                newArrayList.add(Montagna(R.drawable.lagodellavacca,"Lago della Vacca ","2.5 h ","Cadino della Banca",
+                    "https://www.vivilavalsabbia.com/escursione-al-lago-della-vacca-mt-2350-valle-del-caffaro/"))
+                newArrayList.add(Montagna(R.drawable.rifugiomariafranco,"rifugio Maria e \n Franco","4.5h ","Case di Val Paghera",
+                    "https://www.rifugi.lombardia.it/attivita/trekking/al-rifugio-piu-alto-della-val-camonica.html"))
+                newArrayList.add(Montagna(R.drawable.montevignole,"Monte Vignole","2h ","Zone",
+                    "https://visitlakeiseo.info/sport-e-natura/trekking-da-zone-al-monte-vignole/"))
+                newArrayList.add(Montagna(R.drawable.lagolova,"Lago di Lova","2 h ","Località Navertino",
+                    "https://www.stradecinofile.it/al-lago-di-lova-in-val-camonica-con-il-cane/"))
+                newArrayList.add(Montagna(R.drawable.puntaalmana,"Punta Almana","4h ","Croce di Marone",
+                    "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
+
+
+
             }
 
             "ferrata" ->
             {
-                newArrayList.add(Montagna(R.drawable.adamello,"Via ferrata e Terzulli","11 h ","Val d'Avio",
+                newArrayList.add(Montagna(R.drawable.adamello,"Via passeggiata e Terzulli","11 h ","Val d'Avio",
                     "https://www.ferrate365.it/vie-ferrate/ferrata-terzulli-adamello/"))
-                newArrayList.add(Montagna(R.drawable.guglielmo,"Guglielmo da Zone","3.45 h ","Zone",
-                    "https://visitlakeiseo.info/sport-e-natura/trekking-da-zone-al-monte-guglielmo/"))
-                newArrayList.add(Montagna(R.drawable.resegone,"Resegone da Lecco","3 h ","Lecco",
-                    "https://www.trekkinglecco.com/resegone-piazzale-funivia-lecco-sentiero-1/"))
-                newArrayList.add(Montagna(R.drawable.pizzococa,"Pizzo Coca ","10 h ","Valbondione",
-                    "https://www.maxpiantoni.it/foto-sui-sentieri-orobici/escursione-al-pizzo-coca.html "))
-                newArrayList.add(Montagna(R.drawable.pizzoarera,"Pizzo Arera ","7 h ","Zambla alta ",
-                    "https://www.valbrembanaweb.com/valbrembanaweb/monti/arera.html "))
-                newArrayList.add(Montagna(R.drawable.cornatrentapassi,"Corna Trentapassi ","1.5 h ","Zone",
-                    "https://visitlakeiseo.info/sport-e-natura/trekking-da-zone-alla-corna-trentapassi/ "))
-                newArrayList.add(Montagna(R.drawable.laghigemelli,"Laghi gemelli ","5 h ","Carona",
-                    "https://lemontagne.net/laghi-gemelli/ "))
-                newArrayList.add(Montagna(R.drawable.pizzobecco,"Ferrata pizzo del becco ","2 h ","Rif laghi gemelli ",
-                    "https://www.ferrate365.it/vie-ferrate/ferrata-pizzo-becco/#foto "))
-                newArrayList.add(Montagna(R.drawable.pizzocamino,"Pizzo camino normale ","6.5 h ","Schilpario",
-                    "https://www.vienormali.it/montagna/cima_scheda.asp?cod=713 "))
+                //sentiero dei fiori
+                // ferrata delle capre
             }
         }
 
