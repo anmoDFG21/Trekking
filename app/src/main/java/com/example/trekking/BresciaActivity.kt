@@ -84,10 +84,21 @@ class BresciaActivity : ComponentActivity()
 
             "ferrata" ->
             {
-                newArrayList.add(Montagna(R.drawable.adamello,"Via passeggiata e Terzulli","11 h ","Val d'Avio",
-                    "https://www.ferrate365.it/vie-ferrate/ferrata-terzulli-adamello/"))
+                //newArrayList.add(Montagna(R.drawable.," "," ","", ""))
+                newArrayList.add(Montagna(R.drawable.sentierodeifiori,"Sentiero dei fiori","7 h ","Passo paradiso",
+                    "https://www.ferrate365.it/vie-ferrate/ferrata-sentiero-fiori-tonale-adamello/"))
+                newArrayList.add(Montagna(R.drawable.ferratacapre,"Ferrata delle capre","3 h ","Croce di Marone",
+                    "https://www.vieferrate.it/pag-relazioni/lombardia/54-prealpi-bresciane/425-corna-delle-capre.html"))
+                newArrayList.add(Montagna(R.drawable.ferratadelbene,"Ferrata del bene","4.5 h ","Zone",
+                    "https://www.vieferrate.it/pag-relazioni/lombardia/54-prealpi-bresciane/404-corno-del-bene.html"))
+
                 //sentiero dei fiori
                 // ferrata delle capre
+                //ferrata del bene
+                //ferrta fregio e ginestre
+                //grevo rifugio lissone
+                //punta dal violo
+                //sassi lado d'idro
             }
         }
 
