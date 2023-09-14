@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SentieroActivity">
+
+    <ImageView
+        android:id="@+id/aa"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/guglielmo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aa">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cardView2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:text="\nIl Percorso:"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/article_subheading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="
+Il sentiero inizia dal paese di Zone dove è possibile lasciare l’auto prima di intraprendere
+il percorso. Il primo tratto corrisponde a strada sterrata e si trovano le prime indicazioni per la
+salita al Monte Guglielmo. Il percorso prosegue sul sentiero del Bosco degli Gnomi, dove si possono
+ammirare sculture in legno posizionate lungo il tracciato. Proseguendo si raggiunge un bivio dove è
+possibile scegliere una delle due alternative 227 o 227A. Il 227A taglia nel bosco e permette di guadagnare
+tempo, anche se più ripido. Una volta raggiunta la malga di Casentiga, il percorso riprende su sentiero stretto
+ma non difficile, fino a raggiungere un’area dedicata a prato, un punto acqua e malga Palmarusso di Sotto.
+Proseguire lungo il sentiero fino a Pozza del Culmet e poi al Rifugio Almici. Imboccare l’ultimo tratto di
+sentiero fino alla vetta del Monte Guglielmo dove è presente il monumento del Redentore.
+
+Come arrivare e dove parcheggiare
+Seguire le indicazioni per il lago d’Iseo e imboccare la SP 510 con uscita a Zone. Seguire poi le
+indicazioni per il centro di zone, fino a raggiungere i parcheggi in prossimità del cimitero."
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:text="\nInfo utili :"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/article"
+                    android:layout_width="wrap_content"
+                    android:layout_height="159dp"
+                    android:autoLink="web"
+                    android:text=
+                        "Si raccomandano scarponi da trekking. Se il percorso viene svolto nei periodi invernali e c’è
+la presenza di neve e ghiacchio, si raccomandano ramponi e ciaspole e attrezzatura adeguata."
+                    />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

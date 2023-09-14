@@ -32,11 +32,11 @@ class BresciaActivity : ComponentActivity()
         getUserdata()
 
     }
-    private fun gotoUrl(s:String)
+
+    fun gotoUrl(s:String)
     {
         val intent: Intent = Intent(this, SentieroActivity::class.java)
-        //intent.putExtra("activity", activity)
-        intent.putExtra("percorso", "String")
+        intent.putExtra("aa", s)
         startActivity(intent)
         //startActivity( Intent(Intent.ACTION_VIEW, Uri.parse(s)))
     }
@@ -59,7 +59,7 @@ class BresciaActivity : ComponentActivity()
 
             "trekking" ->
             {
-                newArrayList.add(Montagna(R.drawable.adamello,"Via passeggiata e Terzulli","11 h ","Val d'Avio",
+                newArrayList.add(Montagna(R.drawable.adamello,"Rifugio Gnutti e la Via Terzulli","11 h ","Val d'Avio",
                     "https://www.ferrate365.it/vie-ferrate/ferrata-terzulli-adamello/"))
                 newArrayList.add(Montagna(R.drawable.guglielmo,"Guglielmo da Zone","3.45 h ","Zone",
                     "https://visitlakeiseo.info/sport-e-natura/trekking-da-zone-al-monte-guglielmo/"))
