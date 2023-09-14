@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SentieroActivity">
+
+    <ImageView
+        android:id="@+id/aa"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/adamello"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aa">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cardView2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:text="
+\nPremessa:"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="La relazione descrive la Via Terzulli, una via alpinistica con passaggi fino al grado di difficoltà III/III+ (PD+).
+Recentemente è stata aggiunta una sezione con catene, ma la via non è considerata una via ferrata e richiede di essere
+percorsa a ritroso durante la discesa. La difficoltà complessiva è valutata come F +.
+Per affrontare questa salita, è necessario avere l'attrezzatura adeguata, tra cui imbrago, set da ferrata con longe,
+casco, ramponi e, in caso di rocce umide o verglassate durante la discesa, una corda. La salita dovrebbe essere fatta in assenza di neve e con condizioni meteorologiche stabili.
+L'itinerario, sebbene non molto lungo in termini di distanza e dislivello, richiede molte ore a causa del terreno
+difficile da percorrere, quindi è consigliabile pernottare al Rifugio Gnutti." />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:text="\nL'avvicinamento:"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="inizia da Brescia e segue la Valle Camonica fino a Sonico, dove si devia a destra per la Val Miller.
+La strada diventa stretta e tortuosa attraverso il bosco, passando per il Rifugio Val Malga. Dopo il Ponte del Guat,
+si può parcheggiare prima del rifugio o lungo la strada. È anche possibile continuare per circa 1 km su una strada ciottolata fino allo spiazzo del rifugio Premassone, con un pedaggio di 5 euro." />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:text="\nPercorso:"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="La descrizione dettagliata del percorso inizia dal Ponte del Guat e passa attraverso la Malga Premassone, poi continua
+su una pista ciottolata fino a raggiungere il torrente Remulo e le Scale Miller. Dopo una serie di gradinate rocciose,
+si arriva a una valletta pascoliva. Proseguendo, si incontrano baite usate dai pastori e si sale tra dossi erbosi e rocce montonate fino a raggiungere il Rifugio Gnutti.
+Dal rifugio, si segue un sentiero che costeggia la diga Miller e porta al Pantano del Miller, una zona acquitrinosa.
+Continuando lungo il percorso, si raggiunge una conca erbosa alla base della ripida morena sul versante ovest della
+Punta Ugolini, dove inizia la Via Terzulli.
+Dopo una serie di sezioni con catene e passaggi su rocce, si raggiunge il Passo dell'Adamello a 3235 metri di altitudine.
+La discesa include un ripido pendio di pietrame instabile, che richiede cautela, e un attraversamento di una valletta
+glaciale sotto il 'muro' del fronte del ghiacciaio.
+Il percorso finale attraversa il Pian di Neve in direzione nord, superando alcune roccette instabili. Si prosegue lungo
+una cresta/pendio fino a raggiungere la cima dell'Adamello, dove si trova una croce di vetta." />
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

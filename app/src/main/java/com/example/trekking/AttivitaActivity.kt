@@ -13,8 +13,8 @@ class AttivitaActivity : ComponentActivity() {
         val intent = intent
 
 
-        val passeggiatabtn = findViewById<TextView>(R.id.btnpasseggiata)
-        val trekkingbtn = findViewById<TextView>(R.id.btntrekking)
+        val passeggiatabtn = findViewById<TextView>(R.id.passeggiata)
+        val trekkingbtn = findViewById<TextView>(R.id.trekking)
         val ferratabtn = findViewById<TextView>(R.id.ferrata)
 
 
