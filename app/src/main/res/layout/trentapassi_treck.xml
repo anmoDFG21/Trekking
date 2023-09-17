@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SentieroActivity">
+
+    <ImageView
+        android:id="@+id/aa"
+        style="@style/imgStyle"
+        android:src="@drawable/cornatrentapassi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        style="@style/cardStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aa">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cardView2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="
+\nCome arrivare :" />
+
+                <TextView
+                    style="@style/textStyle"
+
+                    android:text="Seguire le indicazioni per il lago d’Iseo e imboccare la SP 510 con uscita a Zone.
+Seguire poi le indicazioni per il centro di Zone, fino a raggiungere i parcheggi in Via Aldo Moro oppure in Via Trenta Passi." />
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="
+\nIl percorso:" />
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="Lasciare l’auto nel centro di Zone e percorrere Via Marcolano uscendo dal paese. Seguire il segnavia indicante “Corna Trentapassi” fino ad incamminarsi su
+strada cementata e acciottolata. Il tracciato diventa poi terroso e ben battuto, e con alcuni tornanti si raggiunge la Forcella Occidentale Trentapassi.
+La cartellonistica indica Corna Trentapassi a sinistra mentre a destra Croce di Zone. Proseguire a  sinistra lungo un tratto in salita, poi, una volta usciti all’aperto,
+si vede la Corna Trentapassi, contraddistinta dalla croce di ferro e sulla destra il Lago d’Iseo. Proseguire in salita seguendo il segnavia 205, e ignorando il sentiero
+che sale dritto verso la corna Trentapassi. Arrivati alla Forcella del Zuf, il sentiero svolta verso destra e inizia il tratto più spettacolare dell’intero percorso.
+Proseguire in salita verso l’Anticima Est della Corna Trentapassi, dove dalla Croce si gode di un panorama meraviglioso. Affrontare l’ultimo tratto di salita.
+Il sentiero procede sulla sinistra rimanendo più interno rispetto alla cresta e mai pericoloso. In breve tempo si raggiunge poi la cima della Corna Trentapassi."
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

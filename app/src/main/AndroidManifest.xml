@@ -27,11 +27,11 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
         <activity
+            android:name=".SentieroActivity">
+        </activity>
+        <activity
             android:name=".ProvinciaActivity">
         </activity>
-
-
-
         <activity
             android:name=".BresciaActivity">
         </activity>
