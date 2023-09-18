@@ -14,10 +14,31 @@ class SentieroActivity : ComponentActivity() {
         var trek:String = intent.getStringExtra("aa").toString()
         if(trek == "Rifugio Gnutti e la Via Terzulli")
             setContentView(R.layout.adamello_trek)
-        if(trek == "Guglielmo da Zone")
+        else if(trek == "Guglielmo da Zone")
             setContentView(R.layout.guglielmo_trek)
-        if(trek == "Corna Trentapassi")
+        else if(trek == "Corna Trentapassi")
             setContentView(R.layout.trentapassi_treck)
+
+
+        else if(trek == "Cima Laione ")
+            setContentView(R.layout.laione_trek)
+        else if(trek == "Lago della Vacca ")
+            setContentView(R.layout.lagovacca_trek)
+        else if(trek == "Rifugio Maria e \n Franco")
+            setContentView(R.layout.mariafranco_trek)
+        else if(trek == "Monte Vignole")
+            setContentView(R.layout.vignole_trek)
+        else if(trek == "Lago di Lova")
+            setContentView(R.layout.lova_trek)
+        else if(trek == "Punta Almana")
+            setContentView(R.layout.almana_trek)
+        else
+            setContentView(R.layout.trentapassi_treck)
+
+
+
+
+
         super.onCreate(savedInstanceState)
 
     }

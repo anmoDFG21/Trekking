@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SentieroActivity">
+
+    <ImageView
+        android:id="@+id/aa"
+        style="@style/imgStyle"
+        android:src="@drawable/puntaalmana"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        style="@style/cardStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aa">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cardView2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Accesso:" />
+
+                <TextView
+                    style="@style/textStyle"
+
+                    android:text="Il rifugio Croce di Marone si trova a 1166 mslm, ed è raggiungibile in auto da Marone, via Cislano di Zone in 40min." />
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Ascensioni:" />
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="L’itinerario proposto parte dalla Forcella di Sale (1108 m slm) alla quale si giunge: dalla Croce di Marone, da Sale Marasino (560m slm, 1h 20’, in auto fino a Portole) o da Gardone Val Trompia (388 m slm, 2h 30’, in auto fino alla località Madonna del Castello di Inzino).
+L’itinerario cha passa dalla Croce di Marone è consigliato per MTB.
+Dalla forcella si possono seguire due itinerari. Il più facile e veloce scende inizialmente seguendo il Sentiero 3V;  prima di uscire dalla pineta (meno di 10’ dalla forcella) si prende a destra un sentiero che sale, attraversa un roccolo e quindi compie un ampio arco in salita sulle pendici orientali della Punta Almana.
+Arrivati in cresta, si giunge alla vetta in pochi minuti (1h dalla forcella). L’altro è percorribile solo da escursionisti esperti: dalla forcella si sale in cresta direttamente dietro la casa che si vede indirezione Sud (sentiero attrezzato); si sale1.200 prima a Punta Cabrera (1294m slm, 40’ dalla forcella).
+Seguendo le tracce in cresta, con qualche altro passaggio esposto, si perviene infine alla Punta Almana (1390 mslm, 1h 20’)." />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

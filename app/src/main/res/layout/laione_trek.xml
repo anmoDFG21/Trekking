@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SentieroActivity">
+
+    <ImageView
+        android:id="@+id/aa"
+        style="@style/imgStyle"
+        android:src="@drawable/cimalaione"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        style="@style/cardStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aa">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cardView2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Partenza:" />
+
+                <TextView
+                    style="@style/textStyle"
+
+                    android:text="Il punto di partenza della nostra escursione sara Passo Crocedomini " />
+
+
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\nPercorso:"
+                    />
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="Dal passo Crocedomini si risale un ripido versante che in breve porta ad panoramico sentiero con
+splendida fioritura di stelle alpine.
+Si percorre l’incantevole Val Fredda , vero gioiello naturalistico, dove solitamente si possono
+osservare le immancabili marmotte. Si transita sotto il monte Cadino si raggiunge, in circa 1 ora e
+45’ il passo di Val Fredda (mt. 2321).
+Da qui si scende leggermente e poi con comodo sentiero pianeggiante si arriva al rifugio Tita Secchi
+al lago della Vacca, ore 2 e 45’ (mt. 2386).
+Si prosegue sul sentiero n.1 dell’Adamello per il Passo del Blumone (mt 2633), che si raggiunge in
+in 45 minuti dal rifugio.
+Poco dopo il passo si abbandona il sentiero N. 1 e per facili roccette (un passaggio di I grado per
+raggiungere la madonnina posta sulla cima) si perviene in circa 30 min. alla cima del Monte Laione
+(mt. 2757). Il panorama dalla cima spazia su tutta la conca del Listino, Cornone di Blumone, Monte
+Frerone.
+Il ritorno avviene per lo stesso itinerario di salita. " />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

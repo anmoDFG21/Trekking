@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SentieroActivity">
+
+    <ImageView
+        android:id="@+id/aa"
+        style="@style/imgStyle"
+        android:src="@drawable/rifugiomariafranco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        style="@style/cardStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aa">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cardView2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Partenza:" />
+
+                <TextView
+                    style="@style/textStyle"
+
+                    android:text="All'ingresso meridionale del paese di Ceto inizia la strada che entra in Val Paghera (indicazione) e che dopo 9 km termina alle Case di Val Paghera." />
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Percorso:" />
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="Lasciata l'auto si prosegue ancora su strada sterrata e poco dopo si abbandona la deviazione a destra che porta verso Malga Listino in alta Val Paghera. Teneno a sinistra lungo il fondovalle si entra in Val di Dois. Poco dopo si traversa il torrente e si sale raggiungendo Malga Dois 1731 m. Sempre lungo il fondovalle si lambiscono le rovine di Malga Pile 2109 m raggiungendo le rive del Lago delle Pile da dove è già visibile il rifugio. Per traccia più incerta ma ben segnalata ci si porta alla testata della valle raggiungedo il rifugio." />
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

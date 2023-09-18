@@ -63,25 +63,26 @@ class BresciaActivity : ComponentActivity()
                     "https://www.ferrate365.it/vie-ferrate/ferrata-terzulli-adamello/"))
                 newArrayList.add(Montagna(R.drawable.guglielmo,"Guglielmo da Zone","3.45 h ","Zone",
                     "https://visitlakeiseo.info/sport-e-natura/trekking-da-zone-al-monte-guglielmo/"))
-
-
-
                 newArrayList.add(Montagna(R.drawable.cornatrentapassi,"Corna Trentapassi","1.5 h ","Zone",
                     "https://visitlakeiseo.info/sport-e-natura/trekking-da-zone-alla-corna-trentapassi/ "))
-                newArrayList.add(Montagna(R.drawable.cimalaione,"Cima Laione ","7 h ","Bazena",
-                    "https://www.vienormali.it/montagna/cima_scheda.asp?cod=3327"))
+
+
+
                 newArrayList.add(Montagna(R.drawable.cimalaione,"Cima Laione ","7 h ","Bazena",
                     "https://www.vienormali.it/montagna/cima_scheda.asp?cod=3327"))
 
-                //newArrayList.add(Montagna(R.drawable.," "," ","", ""))
-                newArrayList.add(Montagna(R.drawable.lagodellavacca,"Lago della Vacca ","2.5 h ","Cadino della Banca",
+                newArrayList.add(Montagna(R.drawable.lagodellavacca,"Lago della Vacca ","2.5 h ","Bazena",
                     "https://www.vivilavalsabbia.com/escursione-al-lago-della-vacca-mt-2350-valle-del-caffaro/"))
-                newArrayList.add(Montagna(R.drawable.rifugiomariafranco,"rifugio Maria e \n Franco","4.5h ","Case di Val Paghera",
+
+                newArrayList.add(Montagna(R.drawable.rifugiomariafranco,"Rifugio Maria e \n Franco","4.5h ","Case di Val Paghera",
                     "https://www.rifugi.lombardia.it/attivita/trekking/al-rifugio-piu-alto-della-val-camonica.html"))
+
                 newArrayList.add(Montagna(R.drawable.montevignole,"Monte Vignole","2h ","Zone",
                     "https://visitlakeiseo.info/sport-e-natura/trekking-da-zone-al-monte-vignole/"))
-                newArrayList.add(Montagna(R.drawable.lagolova,"Lago di Lova","2 h ","Località Navertino",
+
+                newArrayList.add(Montagna(R.drawable.lagolova,"Lago di Lova","4.45 h ","Borno",
                     "https://www.stradecinofile.it/al-lago-di-lova-in-val-camonica-con-il-cane/"))
+
                 newArrayList.add(Montagna(R.drawable.puntaalmana,"Punta Almana","4h ","Croce di Marone",
                     "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
 

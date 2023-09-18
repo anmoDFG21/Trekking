@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SentieroActivity">
+
+    <ImageView
+        android:id="@+id/aa"
+        style="@style/imgStyle"
+        android:src="@drawable/lagolova"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        style="@style/cardStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aa">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cardView2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Partenza:" />
+
+                <TextView
+                    style="@style/textStyle"
+
+                    android:text="Dalla Piazza Giovanni Paolo II salire lungo Via San Fermo. In cima alla via (tabelle segnavia - sentiero n° 82), incamminarsi a destra per Via Pizzo Camino." />
+
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\nPercorso:"
+                    />
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="Lasciate le ultime case del paese, si fiancheggiano alcune cascine e si raggiunge la località Navertino (tabelle segnavia), dove la strada comincia a salire con maggior pendenza. Si passa davanti alla cappelletta votiva di Sedulzo, si raggiunge un ponte con a fianco una fontana di legno e si sale al bivio (tabelle segnavia), dove si gira a destra per affacciarsi sull’altopiano del lago di Lova. Si passa sul ponte del torrente Lovareno, si imbocca il sentiero n° 103 (tabella segnavia) e si attraversano altri due ruscelli. Oltrepassato il secondo corso d’acqua, si prende la biforcazione di sinistra che sale ripida nel bosco. Superato un tornante, la pendenza si attenua e si attraversa a mezzacosta fino a raggiungere i pascoli del Colle Mignone (tabelle segnavia), dove appare il gruppo montuoso della Concarena. Qui si gira a sinistra, si passa a fianco della malga, dove le tabelle segnavia e la segnaletica ci guidano nella risalita di un bel bosco misto di larici e abeti. Usciti dal bosco, si attraversa il pascolo puntando alle tabelle segnavia; lasciati a destra la pozza di Torana ed il sentiero che porta al rifugio Laeng, si risale l’ampia e abbastanza ripida dorsale prativa. Poi il percorso spiana brevemente, il panorama si amplifica e si affronta l’ultimo tratto che sale al Monte Arano, dove la vista ravvicinata della Cima Moren, Pizzo Camino, Monte Sossino e conca di Varicla ci ripagano della nostra fatica. " />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
