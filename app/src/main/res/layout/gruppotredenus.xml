@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SentieroActivity">
+
+    <ImageView
+        android:id="@+id/aa"
+        style="@style/imgStyle"
+        android:src="@drawable/gruppotredenus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        style="@style/cardStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aa">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cardView2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Accesso :" />
+
+                <TextView
+                    style="@style/textStyle"
+
+                    android:text="Da Cimbergo si può salire alla Conca del
+Volano, alla quale fanno da anfiteatro le
+impervie guglie del Tredenus, per una bel-
+la strada forestale, mentre da Paspardo si
+raggiunge il Rifugio Colombè tramite una
+mulattiera molto ben tenuta. Ambedue i
+percorsi sono molto belli in MTB.
+Al Rifugio Colombè si può salire anche a
+piedi per il segnavia 117 (circa 1h 30’)."/>
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Percorso:" />
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="Dal Rifugio Colombè, scendendo un poco
+verso le baite di Zumella, si imbocca il
+sentiero con segnavia 78 che conduce al
+Passo della Porta e quindi al Lago d’Arno
+in circa 4h; prestare attenzione nella parte bassa dove la vegetazione, unita alla
+scarsa frequentazione dei luoghi, rende
+difficoltosa l’individuazione della traccia. Il
+Passo della Porta può anche essere raggiunto direttamente dal Colombè proseguendo sul segnavia 117 lungo la dorsale,
+ma questo percorso è più impegnativo.
+Dal Lago d’Arno seguendo il segnavia 22
+si torna a Paspardo, con un lungo periplo
+per buona parte nel bosco e senza grandi
+dislivelli (circa 4h).
+Il Rifugio De Marie rappresenta il punto di
+partenza ideale per l’impegnativa ascensione al Pizzo Badile (2435 slm) seguendo
+il segnavia 77 (circa 3 h). Per la presenza
+di alcuni tratti muniti di cordine metalliche
+e per la facilità con la quale, soprattutto in
+presenza di altri gruppi, si verificano accidentali cadute di sassi, è consigliabile il kit
+da ferrata. Per la sua posizione avanzata
+nel mezzo della Valle Camonica, dalla vetta
+del Pizzo Badile si gode di un panorama
+veramente unico. Un’altra escursione permette di raggiun-
+gere il Bivacco CAI Marcherio (2599 slm,
+segnavia 16 in 3h 30’) posto tra le selvagge guglie del Gruppo del Tredenus.
+Da questo, in meno di 2h (solo per escursionisti esperti), si raggiunge il Rifugio Ma-
+ria e Franco."/>
+
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

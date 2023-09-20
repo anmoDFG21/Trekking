@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SentieroActivity">
+
+    <ImageView
+        android:id="@+id/aa"
+        style="@style/imgStyle"
+        android:src="@drawable/rifugiovaltrompia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        style="@style/cardStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aa">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cardView2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Accesso :" />
+
+                <TextView
+                    style="@style/textStyle"
+
+                    android:text="Sulla SS 345 in direzione N, a Lavone de-
+viare a sinistra per Pezzaze ed il Colle S.
+Zeno. Poco dopo si incontra la deviazione
+a sinistra per Pezzoro.
+Da Pezzoro (911 m slm), lasciata l’auto,
+percorrere la strada sterrata con qualche
+tratto dal fondo in cemento che porta al
+rifugio Val Trompia (1260 m slm, 1h 10’)."/>
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Percorso:" />
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="Il Rifugio Val Trompia è una base ideale per
+effettuare escursioni brevi e non impegna-
+tive. Posto alle falde del Monte Guglielmo,
+la salita alla vetta per i boschi e i dolci pa-
+scoli è la più impegnativa.
+Dal Rifugio Val Trompia si raggiungono facilmente i Piani di Caregno (1h 30’) e Colle
+S. Zeno (1h 30’ per mulattiera).
+Data la sua particolare posizione, il Rifugio
+Val Trompia è una meta ideale per i cicloturisti."/>
+
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

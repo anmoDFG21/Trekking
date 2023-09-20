@@ -44,6 +44,31 @@ class SentieroActivity : ComponentActivity() {
             setContentView(R.layout.valmiller)
         else if(trek == "Val Salarno")
             setContentView(R.layout.valsalarno)
+
+        else if(trek == "Gruppo del Tredenus")
+            setContentView(R.layout.gruppotredenus)
+        else if(trek == "Il selvaggio\n" +"Passo Dernal")
+            setContentView(R.layout.passodernal)
+        else if(trek == "Cornone di Blumone")
+            setContentView(R.layout.cornoneblumone)
+        else if(trek == "Passo Crocedomini")
+            setContentView(R.layout.passocrocedomini)
+        else if(trek == "Monte Cimosco")
+            setContentView(R.layout.montecimoso)
+        else if(trek == "Rifugio Val Trompia")
+            setContentView(R.layout.rifugiovaltrompia)
+        else if(trek == "Rifugio Nasego")
+            setContentView(R.layout.rifugionasego)
+        else if(trek == "Monte Pizzocolo")
+            setContentView(R.layout.montepizzocolo)
+        else if(trek == "Altopiano di Cariadeghe")
+            setContentView(R.layout.altopianocariadeghe)
+        else if(trek == "Monte Maddalena")
+            setContentView(R.layout.maddalena)
+        else if(trek == "Sentiero dei Fiori")
+            setContentView(R.layout.sentierofiori_trek)
+
+
         else
             setContentView(R.layout.trentapassi_treck)
 

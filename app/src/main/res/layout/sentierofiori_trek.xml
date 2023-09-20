@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SentieroActivity">
+
+    <ImageView
+        android:id="@+id/aa"
+        style="@style/imgStyle"
+        android:src="@drawable/sentierodeifiori"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        style="@style/cardStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aa">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cardView2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Accesso :" />
+
+                <TextView
+                    style="@style/textStyle"
+
+                    android:text="Questa escursione si toglie dalla logica di
+tutti gli altri percorsi presentati in questa
+guida: in effetti, per percorrerla in tutta si-
+curezza, è opportuno farsi accompagnare
+da una guida alpina.
+Per escursionisti esperti è comunque pos-
+sibile effettuare il percorso senza accom-
+pagnatore, purchè muniti di kit da ferrata.
+Per spezzare il percorso, e la fatica, è pos-
+sibile pernottare al Rifugio Mandrone.
+Per risparmiare la faticosa salita al Passo
+del Paradiso (2590 slm), si può utilizzare
+la cabinovia che sale dal Passo del Tonale
+in pochi minuti."/>
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Percorso:" />
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="Dal Passo del Paradiso, ci si dirige verso il
+Passo del Castellaccio (segnavia 44, 3029
+slm, 2h). Qui, oltre al panorama stupendo
+su tutte le alpi e sulle valli sottostanti, si
+possono visitare alcuni appostamenti mili-
+tari risalenti alla Grande Guerra. Da questo
+punto, per proseguire, è indispensabile il
+kit da ferrata.
+Il sentiero prosegue per erti canaloni e roc-
+ce strapiombanti sulla sottostante Val Soz-
+zine, posta oltre 1.500 metri più in basso,
+fino a Cima Lago Scuro (3165 slm, circa
+4h dalla partenza), nei pressi della quale
+è la famosa Capanna, un bivacco general-
+mente chiuso (per informazioni, rivolgersi
+a Ponte di Legno all’Associazione Amici di
+Capanna Lago Scuro). Da Cima Lago Scuro si può tornare sui
+propri passi, oppure proseguire verso
+Passo Lago Scuro. A circa 10-15 minuti
+dalla Capanna, una deviazione sulla sini-
+stra (direzione SE) permette di aggirare in
+basso Cima Lago Scuro e di raggiungere
+la Conca di Presena, e quindi il Passo Pa-
+radiso, in circa 1h 40’, altrimenti si può
+proseguire fino a Passo Lago Scuro (2970
+slm, 40’ dalla capanna) dove era collocato
+uno dei più grandi villaggi militari in quota
+che siano mai stati utilizzati militarmente
+per l’intero anno sulle Alpi.
+Dal Passo si può salire a Cima Payer (3088 slm, circa 1h), oppure scendere in direzio-
+ne del Lago Scuro, nei pressi del quale
+si incrocia il sentiero che sale dal Rifugio
+Mandrone, raggiungibile in circa 1h 40’ da
+Passo Lago Scuro.
+Dal Rifugio Mandrone, si risale per il sen-
+tiero da poco risistemato (2004) dalla SAT
+fino al Passo del Maroccaro (3034 slm), e
+da questo, lungo il Ghiacciaio del Presena,
+si ritorna a Passo Paradiso (circa 4h dal
+Rifugio). Una serie di pannelli informativi,
+realizzati a cura del Parco dell’Adamello,
+permette di avere numerose e puntuali in-
+dicazioni lungo tutto il percorso."/>
+
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -95,6 +95,42 @@ class BresciaActivity : ComponentActivity()
 
                 newArrayList.add(Montagna(R.drawable.valsalarno,"Val Salarno"," ","",
                     "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
+
+
+
+
+                newArrayList.add(Montagna(R.drawable.gruppotredenus,"Gruppo del Tredenus"," ","",
+                    "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
+
+                newArrayList.add(Montagna(R.drawable.passodernal,"Il selvaggio\n" + "Passo Dernal"," ","",
+                    "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
+
+                newArrayList.add(Montagna(R.drawable.cornoneblumone,"Cornone di Blumone","","",
+                    "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
+
+                newArrayList.add(Montagna(R.drawable.passocrocedomini,"Passo Crocedomini"," ","",
+                    "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
+
+                newArrayList.add(Montagna(R.drawable.montecimoso,"Monte Cimosco"," ","",
+                    "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
+
+                newArrayList.add(Montagna(R.drawable.rifugiovaltrompia,"Rifugio Val Trompia"," ","",
+                    "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
+
+                newArrayList.add(Montagna(R.drawable.rifugionasego,"Rifugio Nasego"," ","",
+                    "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
+
+                newArrayList.add(Montagna(R.drawable.montepizzocolo,"Monte Pizzocolo"," ","",
+                    "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
+
+                newArrayList.add(Montagna(R.drawable.cariadeghe,"Altopiano di Cariadeghe"," ","",
+                    "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
+
+                newArrayList.add(Montagna(R.drawable.maddalena,"Monte Maddalena"," ","",
+                    "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
+
+                newArrayList.add(Montagna(R.drawable.sentierodeifiori,"Sentiero dei Fiori"," ","",
+                    "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
             }
 
             "ferrata" ->

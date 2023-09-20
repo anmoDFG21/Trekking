@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SentieroActivity">
+
+    <ImageView
+        android:id="@+id/aa"
+        style="@style/imgStyle"
+        android:src="@drawable/passodernal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        style="@style/cardStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aa">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cardView2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Accesso :" />
+
+                <TextView
+                    style="@style/textStyle"
+
+                    android:text="Gli accessi bresciani al Rifugio Maria e
+Franco sono faticosi, ma molto interessanti: per chi non abbia un grosso allenamento
+si consiglia senz’altro di partire da Malga
+Bissina, in Val Daone (deviazione a Pieve
+di Bono sulla SS 237 per Tione). L’accesso
+dalla Val Dois (auto in Val Paghera di Ceto)
+è solitario e selvaggio, si svolge prevalentemente in fondo valle. L’accesso da Isola
+di Saviore, anche se un po’ lungo, è quello
+paesaggisticamente più interessante, soprattutto se si parte al mattino presto di
+una giornata serena."/>
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Percorso:" />
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="Dal rifugio è possibile effettuare numerose
+escursioni molto affascinanti dal punto di
+vista paesaggistico, oltre a rappresentare
+la base di partenza ideale per arrampicate
+nel Gruppo del Tredenus.
+La salita al Re di Castello (2889 m slm,
+1h 30’ dal rifugio)è poco impegnativa, ma
+assai interessante per il panorama a 360
+gradi che si gode dalla vetta. Da effettuare
+in stagione avanzata. Dal Rifugio Maria e
+Franco si può raggiungere il Bivacco CAI
+Marcherio (2590 m slm, 2h 30’ dal rifugio).
+L’itinerario è raccomandabile dal punto di
+vista paesaggistico (solo per escursionisti
+esperti)."/>
+
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
