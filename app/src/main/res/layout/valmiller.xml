@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SentieroActivity">
+
+    <ImageView
+        android:id="@+id/aa"
+        style="@style/imgStyle"
+        android:src="@drawable/valmiller"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        style="@style/cardStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aa">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cardView2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Accesso:" />
+
+                <TextView
+                    style="@style/textStyle"
+
+                    android:text="Lasciata l’auto in prossimità del Ponte del
+Guat, o nel parcheggio in prossimità del
+Rifugio Premassone (accesso con per-
+messo), seguire le indicazioni del segnavia
+23 passando in successione per Malga
+Premassone e Malga Frino.
+Il gradone glaciale si supera con le “Scale
+del Miller”, tortuoso e ripido sentiero che
+porta all’imbocco della Val Miller. Il rifugio
+è punto tappa del trekking dell’Adamello." />
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Ascensioni:" />
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="Dal rifugio si può salire al Monte Adamello
+(3.539 slm) attraverso l’omonimo passo,
+Cima Plem (3.182 slm) e il Corno Miller
+(3.373 slm). Nei pressi del rifugio ci sono
+numerose vie d’arrampicata, sportiva ed
+alpinistica (info presso il rifugio)."/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

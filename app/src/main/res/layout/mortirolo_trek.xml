@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SentieroActivity">
+
+    <ImageView
+        android:id="@+id/aa"
+        style="@style/imgStyle"
+        android:src="@drawable/mortirolo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        style="@style/cardStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aa">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cardView2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Accesso:" />
+
+                <TextView
+                    style="@style/textStyle"
+
+                    android:text="All’incirca 4 Km dopo Edolo in direzione
+del Passo del Tonale, si stacca a sinistra
+la strada che attraversa l’abitato di Monno
+e prosegue in direzione dell’altipiano del
+Mortirolo. Poche centinaia di metri prima
+dell’omonimo passo, a sinistra si imboc-
+ca una strada sterrata che, in un paio di
+Km, conduce al Rifugio Antonioli, posto nei
+pressi del Laghetto del Mortirolo e recen-
+temente ristrutturato." />
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Ascensioni:" />
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="Dall’Albergo Alto (1792 m slm) si segue
+brevemente la strada per l’Aprica, fino a
+incontrare a sinistra una carrareccia che,
+in meno di 30’, porta all’incantevole conca
+del lago del Mortirolo (1779 m slm).
+Dal colle di Val Bighera una stradina di ori-
+gine militare risale a S la cresta erbosa del
+Pianaccio (2180 m slm). Si prosegue per
+un facile sentiero, sempre in cresta, fino
+alla vetta del Monte Pagano (2348 m slm,
+1h). Presso la vetta è ancora ben conser-
+vato il rudere del cosiddetto “Forte del Pa-
+gano”. Notevole il panorama, in particolare
+verso l’Adamello.
+Il percorso è generalmente fattibile anche
+d’inverno, con gli sci o le racchette.
+Dalle Cascine di Val Bighera (1997 m slm)
+parte il sentiero N° 73 per i Laghi Seroti.
+laghi sono una decina, sparsi in nume-
+rose e suggestive conche. Il primo lago
+(2176 m slm) si raggiunge facilmente in
+meno di un’ora. Il lago più alto, a quota
+2750 m, si raggiunge risalendo le varie
+conche, in ambiente vario e suggestivo,
+sempre sul sentiero segnalato.
+Richiede circa 3 ore e buone capacità
+escursionistiche."/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

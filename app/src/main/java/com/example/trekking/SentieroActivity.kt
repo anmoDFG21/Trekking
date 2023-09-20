@@ -18,8 +18,6 @@ class SentieroActivity : ComponentActivity() {
             setContentView(R.layout.guglielmo_trek)
         else if(trek == "Corna Trentapassi")
             setContentView(R.layout.trentapassi_treck)
-
-
         else if(trek == "Cima Laione ")
             setContentView(R.layout.laione_trek)
         else if(trek == "Lago della Vacca ")
@@ -32,6 +30,20 @@ class SentieroActivity : ComponentActivity() {
             setContentView(R.layout.lova_trek)
         else if(trek == "Punta Almana")
             setContentView(R.layout.almana_trek)
+        else if(trek == "Monte Torsoleto")
+            setContentView(R.layout.montetorsoleto_trek)
+        else if(trek == "Altopiano del Mortirolo")
+            setContentView(R.layout.mortirolo_trek)
+        else if(trek == "Pizzo Camino Camuno")
+            setContentView(R.layout.pizzocamuno_trek)
+        else if(trek == "Sentiero delle Aquile")
+            setContentView(R.layout.sentieroaquile_trel)
+        else if(trek == "Valli di S. Antonio")
+            setContentView(R.layout.valliantonio_trek)
+        else if(trek == "Val Miller")
+            setContentView(R.layout.valmiller)
+        else if(trek == "Val Salarno")
+            setContentView(R.layout.valsalarno)
         else
             setContentView(R.layout.trentapassi_treck)
 

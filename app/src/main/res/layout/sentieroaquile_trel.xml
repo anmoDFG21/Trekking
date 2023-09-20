@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SentieroActivity">
+
+    <ImageView
+        android:id="@+id/aa"
+        style="@style/imgStyle"
+        android:src="@drawable/aquile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        style="@style/cardStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aa">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cardView2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Accesso:" />
+
+                <TextView
+                    style="@style/textStyle"
+
+                    android:text="Per il Rifugio Malga Stain si sale da Edolo
+in direzione del Monte Colmo fino al par-
+cheggio in località Pozzuolo (10.5 Km da
+Edolo), da qui seguendo il segnavia 1 in
+circa un’ora si raggiunge Malga Stain che,
+da pochi anni, è diventato posto tappa del
+Trekking dell’Adamello." />
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Ascensioni:" />
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="Il Rifugio Malga Stain è un punto di par-
+tenza ideale sia per ascensioni alpinistiche
+(Punta Adami, Cima Gallinera e Monte
+Aviolo), sia per più tranquille escursioni
+nella Val Gallinera, lunga e selvaggia che
+raggiunge l’omonimo passo con percorso
+sempre suggestivo. Molto interessante è
+l’intero periplo del Monte Aviolo, conosciu-
+to anche come sentiero delle aquile.
+Dal rifugio si segue il sentiero che, pri-
+ma abassandosi verso il fondo valle e poi
+seguendone l’andamento fino al Passo
+Gallinera, permette, superato questo, di
+addentrarsi nell’ampia Conca dell’Aviolo.
+Dalla sponda NW dell’omonimo lago, si
+segue il sentiero che con ripide volte risale
+il Monte Plaza (alcuni tratti con cordini e
+catene). Dal crinale (circa 2.500 m slm) ci
+si abbassa, prima per prati poi seguendo il
+segnavia 72B. Dalla Chiesetta di S. Vito e
+S. Anna, ci si abbassa verso la Val Finale e,
+per segnavia 72, si raggiunge il parcheggio
+di Pozzolo. L’intero periplo richiede circa
+10 ore e può essere percorso in entrambi
+i sensi di marcia. Il Monte Aviolo, oltre che
+per l’alpinistico spigolo delle capre (440
+m, IV+), si può raggiungere per sentiero
+con alcuni passaggi attrezzati con catene
+(EE). Il panorama dalla vetta (2881 m slm)
+è spettacolare.
+"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
