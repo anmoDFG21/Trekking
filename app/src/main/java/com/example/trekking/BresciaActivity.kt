@@ -57,7 +57,7 @@ class BresciaActivity : ComponentActivity()
 
             "trekking" ->
             {
-                newArrayList.add(Montagna(R.drawable.adamello,"Rifugio Gnutti e la Via Terzulli","11 h ","Val d'Avio",
+                newArrayList.add(Montagna(R.drawable.adamello,"Rifugio Gnutti e \n la Via Terzulli","11 h ","Val d'Avio",
                     "https://www.ferrate365.it/vie-ferrate/ferrata-terzulli-adamello/"))
                 newArrayList.add(Montagna(R.drawable.guglielmo,"Guglielmo da Zone","3.45 h ","Zone",
                     "https://visitlakeiseo.info/sport-e-natura/trekking-da-zone-al-monte-guglielmo/"))
@@ -67,7 +67,7 @@ class BresciaActivity : ComponentActivity()
                     "https://www.vienormali.it/montagna/cima_scheda.asp?cod=3327"))
                 newArrayList.add(Montagna(R.drawable.lagodellavacca,"Lago della Vacca ","2.5 h ","Bazena",
                     "https://www.vivilavalsabbia.com/escursione-al-lago-della-vacca-mt-2350-valle-del-caffaro/"))
-                newArrayList.add(Montagna(R.drawable.rifugiomariafranco,"Rifugio Maria e \n Franco","4.5h ","Case di Val Paghera",
+                newArrayList.add(Montagna(R.drawable.rifugiomariafranco,"Rifugio Maria e \n Franco","4.5h ","Case di \n Val Paghera",
                     "https://www.rifugi.lombardia.it/attivita/trekking/al-rifugio-piu-alto-della-val-camonica.html"))
                 newArrayList.add(Montagna(R.drawable.montevignole,"Monte Vignole","2h ","Zone",
                     "https://visitlakeiseo.info/sport-e-natura/trekking-da-zone-al-monte-vignole/"))
@@ -76,60 +76,58 @@ class BresciaActivity : ComponentActivity()
                 newArrayList.add(Montagna(R.drawable.puntaalmana,"Punta Almana","4h ","Croce di Marone",
                     "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
 
-                newArrayList.add(Montagna(R.drawable.pizzocamino1,"Pizzo Camino Camuno"," ","",
+                newArrayList.add(Montagna(R.drawable.pizzocamino1,"Pizzo Camino Camuno","3 h","Lago di Lova",
                     "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
-                newArrayList.add(Montagna(R.drawable.montetorsoleto,"Monte Torsoleto"," ","",
-                    "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
-
-                newArrayList.add(Montagna(R.drawable.valliantonio,"Valli di S. Antonio"," ","",
+                newArrayList.add(Montagna(R.drawable.montetorsoleto,"Monte Torsoleto","3.5 h","Loveno",
                     "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
 
-                newArrayList.add(Montagna(R.drawable.mortirolo,"Altopiano del Mortirolo"," ","",
+                newArrayList.add(Montagna(R.drawable.valliantonio,"Valli di S. Antonio","4.5 h","S. Antonio",
                     "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
 
-                newArrayList.add(Montagna(R.drawable.aquile,"Sentiero delle Aquile"," ","",
+                newArrayList.add(Montagna(R.drawable.mortirolo,"Altopiano del Mortirolo","3 h","Rifugio Antonioli",
                     "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
 
-                newArrayList.add(Montagna(R.drawable.valmiller,"Val Miller"," ","",
+                newArrayList.add(Montagna(R.drawable.aquile,"Sentiero delle Aquile","3.5 h","Pozzuolo",
                     "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
 
-                newArrayList.add(Montagna(R.drawable.valsalarno,"Val Salarno"," ","",
+                newArrayList.add(Montagna(R.drawable.valmiller,"Val Miller","2.5 h","Ponte del Guat",
                     "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
 
-
-
-
-                newArrayList.add(Montagna(R.drawable.gruppotredenus,"Gruppo del Tredenus"," ","",
+                newArrayList.add(Montagna(R.drawable.valsalarno,"Val Salarno","3.5 h","Rifugio Fabrezza",
+                    "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
+                newArrayList.add(Montagna(R.drawable.gruppotredenus,"Gruppo del Tredenus","4 h","Rifugio Colombè",
                     "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
 
-                newArrayList.add(Montagna(R.drawable.passodernal,"Il selvaggio\n" + "Passo Dernal"," ","",
+                newArrayList.add(Montagna(R.drawable.passodernal,"Il selvaggio\n" + "Passo Dernal","3 h","Val Daone",
                     "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
 
-                newArrayList.add(Montagna(R.drawable.cornoneblumone,"Cornone di Blumone","","",
+                newArrayList.add(Montagna(R.drawable.cornoneblumone,"Cornone di Blumone","3 h","Bazena",
                     "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
 
-                newArrayList.add(Montagna(R.drawable.passocrocedomini,"Passo Crocedomini"," ","",
+                newArrayList.add(Montagna(R.drawable.passocrocedomini,"Passo Crocedomini"," ","Passo di\n" + "Crocedomini",
                     "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
 
-                newArrayList.add(Montagna(R.drawable.montecimoso,"Monte Cimosco"," ","",
+                newArrayList.add(Montagna(R.drawable.montecimoso,"Monte Cimosco","2 h","Plan di Monte\n" +
+                        "Campione",
                     "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
 
-                newArrayList.add(Montagna(R.drawable.rifugiovaltrompia,"Rifugio Val Trompia"," ","",
+                newArrayList.add(Montagna(R.drawable.rifugiovaltrompia,"Rifugio Val Trompia","1.2 h","Pezzoro",
                     "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
 
-                newArrayList.add(Montagna(R.drawable.rifugionasego,"Rifugio Nasego"," ","",
+                newArrayList.add(Montagna(R.drawable.rifugionasego,"Rifugio Nasego","0.5 h","Lodrino",
                     "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
 
-                newArrayList.add(Montagna(R.drawable.montepizzocolo,"Monte Pizzocolo"," ","",
+                newArrayList.add(Montagna(R.drawable.montepizzocolo,"Monte Pizzocolo","1.5 h","Passo di Spino",
                     "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
 
-                newArrayList.add(Montagna(R.drawable.cariadeghe,"Altopiano di Cariadeghe"," ","",
+                newArrayList.add(Montagna(R.drawable.cariadeghe,"Altopiano di Cariadeghe","1.5 h","Villa",
                     "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
 
-                newArrayList.add(Montagna(R.drawable.maddalena,"Monte Maddalena"," ","",
+                newArrayList.add(Montagna(R.drawable.maddalena,"Monte Maddalena","0.5-3h","Maddalena",
                     "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
 
-                newArrayList.add(Montagna(R.drawable.sentierodeifiori,"Sentiero dei Fiori"," ","",
+                newArrayList.add(Montagna(R.drawable.sentierodeifiori,"Sentiero dei Fiori","10 h","Passo\n" +
+                        "del Paradiso",
                     "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
             }
 
