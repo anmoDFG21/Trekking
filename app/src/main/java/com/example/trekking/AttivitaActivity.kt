@@ -16,6 +16,7 @@ class AttivitaActivity : ComponentActivity() {
         val passeggiatabtn = findViewById<TextView>(R.id.passeggiata)
         val trekkingbtn = findViewById<TextView>(R.id.trekking)
         val ferratabtn = findViewById<TextView>(R.id.ferrata)
+        val mapsbtn = findViewById<TextView>(R.id.test11)
 
 
 
@@ -32,6 +33,12 @@ class AttivitaActivity : ComponentActivity() {
         }
 
         ferratabtn.setOnClickListener{
+            val intent: Intent = Intent(this, BresciaActivity::class.java)
+            intent.putExtra("activity", "ferrata")
+            startActivity(intent)
+        }
+
+        mapsbtn.setOnClickListener{
             val intent: Intent = Intent(this, BresciaActivity::class.java)
             intent.putExtra("activity", "ferrata")
             startActivity(intent)

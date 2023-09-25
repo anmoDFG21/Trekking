@@ -6,14 +6,23 @@ import android.widget.TextView
 import androidx.activity.ComponentActivity
 import android.text.method.ScrollingMovementMethod
 import android.widget.ImageView
+import android.view.GestureDetector
+import android.view.MotionEvent
+import android.view.ScaleGestureDetector
 
+
+lateinit var image_: ImageView
+lateinit var scale: ScaleGestureDetector
 class SentieroActivity : ComponentActivity() {
     private lateinit var textview: TextView
     private lateinit var imageView: ImageView
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         var trek:String = intent.getStringExtra("aa").toString()
         if(trek == "Rifugio Gnutti e la Via Terzulli")
-            setContentView(R.layout.adamello_trek)
+            setContentView(R.layout.aamaps)
         else if(trek == "Guglielmo da Zone")
             setContentView(R.layout.guglielmo_trek)
         else if(trek == "Corna Trentapassi")
@@ -44,7 +53,6 @@ class SentieroActivity : ComponentActivity() {
             setContentView(R.layout.valmiller)
         else if(trek == "Val Salarno")
             setContentView(R.layout.valsalarno)
-
         else if(trek == "Gruppo del Tredenus")
             setContentView(R.layout.gruppotredenus)
         else if(trek == "Il selvaggio\n" +"Passo Dernal")
@@ -67,16 +75,45 @@ class SentieroActivity : ComponentActivity() {
             setContentView(R.layout.maddalena)
         else if(trek == "Sentiero dei Fiori")
             setContentView(R.layout.sentierofiori_trek)
-
-
         else
-            setContentView(R.layout.trentapassi_treck)
+            setContentView(R.layout.aamaps)
 
 
 
 
 
         super.onCreate(savedInstanceState)
+        image_ = findViewById(R.id.aamaps)
+        scale = ScaleGestureDetector(this,ScaleListener())
+
+    }
+
+    public override fun onTouchEvent(event: MotionEvent): Boolean {
+        scale.onTouchEvent(event)
+        return true
+    }
+
+
+    public class ScaleListener : ScaleGestureDetector.SimpleOnScaleGestureListener() {
+        public override fun onScale(gest:ScaleGestureDetector): Boolean {
+            val gestureFactore = gest.scaleFactor
+            if(gestureFactore > 1)
+            {
+                image_.scaleX = 1.5F
+                image_.scaleY = 1.5F
+            }
+            if(gestureFactore < 1)
+            {
+                image_.scaleX = 0.7F
+                image_.scaleY = 0.7F
+            }
+
+           return true
+        }
+
+        public override fun onScaleBegin(gest:ScaleGestureDetector): Boolean {
+            return true
+        }
 
     }
 }
