@@ -1,18 +1,21 @@
 package com.example.trekking
 
-import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
 import androidx.activity.ComponentActivity
-import android.text.method.ScrollingMovementMethod
 import android.widget.ImageView
-import android.view.GestureDetector
 import android.view.MotionEvent
 import android.view.ScaleGestureDetector
 
 
 lateinit var image_: ImageView
 lateinit var scale: ScaleGestureDetector
+var factor_f:Float = 0F
+var x_f:Float = 0F
+var y_f:Float = 0F
+var dx_f:Float = 0F
+var dy_f:Float = 0F
+
 class SentieroActivity : ComponentActivity() {
     private lateinit var textview: TextView
     private lateinit var imageView: ImageView
@@ -77,41 +80,48 @@ class SentieroActivity : ComponentActivity() {
             setContentView(R.layout.sentierofiori_trek)
         else
             setContentView(R.layout.aamaps)
-
-
-
-
-
         super.onCreate(savedInstanceState)
         image_ = findViewById(R.id.aamaps)
         scale = ScaleGestureDetector(this,ScaleListener())
 
     }
 
-    public override fun onTouchEvent(event: MotionEvent): Boolean {
-        scale.onTouchEvent(event)
-        return true
-    }
-
-
-    public class ScaleListener : ScaleGestureDetector.SimpleOnScaleGestureListener() {
-        public override fun onScale(gest:ScaleGestureDetector): Boolean {
-            val gestureFactore = gest.scaleFactor
-            if(gestureFactore > 1)
-            {
-                image_.scaleX = 1.5F
-                image_.scaleY = 1.5F
-            }
-            if(gestureFactore < 1)
-            {
-                image_.scaleX = 0.7F
-                image_.scaleY = 0.7F
-            }
-
-           return true
+    public override fun onTouchEvent(event: MotionEvent): Boolean
+    {
+        if(event.action == MotionEvent.ACTION_DOWN)
+        {
+            x_f = event.getX()
+            y_f = event.getY()
         }
 
-        public override fun onScaleBegin(gest:ScaleGestureDetector): Boolean {
+        if(event.action == MotionEvent.ACTION_MOVE)
+        {
+            dx_f = event.getX() - x_f
+            dy_f = event.getY() - y_f
+
+            image_.x = image_.x + dx_f
+            image_.y = image_.y + dy_f
+
+            x_f = event.getX()
+            y_f = event.getY()
+
+        }
+        scale.onTouchEvent(event)
+        return super.onTouchEvent(event)
+    }
+
+    public class ScaleListener : ScaleGestureDetector.SimpleOnScaleGestureListener()
+    {
+        public override fun onScale(gest:ScaleGestureDetector): Boolean
+        {
+            factor_f += (gest.scaleFactor-1)
+            image_.scaleX = factor_f
+            image_.scaleY = factor_f
+            return true
+        }
+
+        public override fun onScaleBegin(gest:ScaleGestureDetector): Boolean
+        {
             return true
         }
 
