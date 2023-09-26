@@ -9,28 +9,25 @@ import android.view.MotionEvent
 import android.view.ScaleGestureDetector
 
 
-lateinit var image_: ImageView
-lateinit var scale: ScaleGestureDetector
-var factor_f:Float = 0F
-var x_f:Float = 0F
-var y_f:Float = 0F
-var dx_f:Float = 0F
-var dy_f:Float = 0F
-val MAX_f:Float = 3F
-val MIN_f:Float = 1.5F
+lateinit var Image_view: ImageView
+lateinit var Scale_class: ScaleGestureDetector
+var Factor_f:Float = 0F
+var X_f:Float = 0F
+var Y_f:Float = 0F
+var Dx_f:Float = 0F
+var Dy_f:Float = 0F
+val MaxZoom_f:Float = 4F
+val MinZoom_f:Float = 1.5F
 var FirstTime_b:Boolean = false
 var X0_f:Float = 0F
 var Y0_f:Float = 0F
+var Treshhold:Float = 20F
 
-val XMAX_f:Float = 600F
-val YMAX_f:Float = 700F
+val XMax_f:Float = 700F
+val YMax_f:Float = 1000F
 
 
 class SentieroActivity : ComponentActivity() {
-    private lateinit var textview: TextView
-    private lateinit var imageView: ImageView
-
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         var trek:String = intent.getStringExtra("aa").toString()
@@ -91,8 +88,8 @@ class SentieroActivity : ComponentActivity() {
         else
             setContentView(R.layout.aamaps)
         super.onCreate(savedInstanceState)
-        image_ = findViewById(R.id.aamaps)
-        scale = ScaleGestureDetector(this,ScaleListener())
+        Image_view = findViewById(R.id.aamaps)
+        Scale_class = ScaleGestureDetector(this,ScaleListener())
 
     }
 
@@ -100,41 +97,53 @@ class SentieroActivity : ComponentActivity() {
     {
         if(event.action == MotionEvent.ACTION_DOWN)
         {
-            x_f = event.getX()
-            y_f = event.getY()
+            X_f = event.getX()
+            Y_f = event.getY()
         }
 
         if(event.action == MotionEvent.ACTION_MOVE)
         {
             if(FirstTime_b == false)
             {
-                X0_f = image_.x
-                Y0_f = image_.y
+                X0_f = Image_view.x
+                Y0_f = Image_view.y
                 FirstTime_b = true
             }
-            dx_f = event.getX() - x_f
-            dy_f = event.getY() - y_f
-            if(image_.x < XMAX_f && image_.x > -XMAX_f && image_.y < YMAX_f && image_.y > -YMAX_f)
+            Dx_f = event.getX() - X_f
+            Dy_f = event.getY() - Y_f
+
+            Image_view.x = (Image_view.x + Dx_f*0.7).toFloat()
+            Image_view.y = (Image_view.y + Dy_f*0.7).toFloat()
+
+            if(Image_view.x > XMax_f || Image_view.x < -XMax_f )
             {
-                image_.x = (image_.x + dx_f*0.7).toFloat()
-                image_.y = (image_.y + dy_f*0.7).toFloat()
+                if(Image_view.x > 0)
+                {
+                    Image_view.x = XMax_f-Treshhold
+                }
+                else
+                {
+                    Image_view.x = -XMax_f+Treshhold
+
+                }
             }
-            else
+            if(Image_view.y > YMax_f || Image_view.y < -YMax_f)
             {
-                image_.x = X0_f
-                image_.y = Y0_f
+                if(Image_view.y > 0)
+                {
+                    Image_view.y = YMax_f-Treshhold
+                }
+                else
+                {
+                    Image_view.y = -YMax_f+Treshhold
+                }
             }
+            X_f = event.getX()
+            Y_f = event.getY()
 
-
-            x_f = event.getX()
-            y_f = event.getY()
-
-            Log.d("x =", "Value: " + image_.y);
-
-
-
+            Log.d("x =", "Value: " + Image_view.y);
         }
-        scale.onTouchEvent(event)
+        Scale_class.onTouchEvent(event)
         return super.onTouchEvent(event)
     }
 
@@ -142,13 +151,13 @@ class SentieroActivity : ComponentActivity() {
     {
         public override fun onScale(gest:ScaleGestureDetector): Boolean
         {
-            factor_f += (gest.scaleFactor-1)
-            if(factor_f > MAX_f)
-                factor_f = MAX_f
-            if(factor_f < MIN_f)
-                factor_f = MIN_f
-            image_.scaleX = factor_f
-            image_.scaleY = factor_f
+            Factor_f += (gest.scaleFactor-1)
+            if(Factor_f > MaxZoom_f)
+                Factor_f = MaxZoom_f
+            if(Factor_f < MinZoom_f)
+                Factor_f = MinZoom_f
+            Image_view.scaleX = Factor_f
+            Image_view.scaleY = Factor_f
             return true
         }
 
