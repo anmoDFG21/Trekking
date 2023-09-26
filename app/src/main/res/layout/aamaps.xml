@@ -4,18 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:scaleX="1.8"
-    android:scaleY="1.8"
     tools:context=".MapsActivity">
 
     <ImageView
         android:id="@+id/aamaps"
         style="@style/imgStyle"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:rotation="90"
-        android:scaleX="0.5"
-        android:scaleY="0.5"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
         android:src="@drawable/guglielmo_maps"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

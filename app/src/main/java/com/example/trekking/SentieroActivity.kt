@@ -1,6 +1,7 @@
 package com.example.trekking
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.TextView
 import androidx.activity.ComponentActivity
 import android.widget.ImageView
@@ -15,6 +16,15 @@ var x_f:Float = 0F
 var y_f:Float = 0F
 var dx_f:Float = 0F
 var dy_f:Float = 0F
+val MAX_f:Float = 3F
+val MIN_f:Float = 1.5F
+var FirstTime_b:Boolean = false
+var X0_f:Float = 0F
+var Y0_f:Float = 0F
+
+val XMAX_f:Float = 600F
+val YMAX_f:Float = 700F
+
 
 class SentieroActivity : ComponentActivity() {
     private lateinit var textview: TextView
@@ -96,14 +106,32 @@ class SentieroActivity : ComponentActivity() {
 
         if(event.action == MotionEvent.ACTION_MOVE)
         {
+            if(FirstTime_b == false)
+            {
+                X0_f = image_.x
+                Y0_f = image_.y
+                FirstTime_b = true
+            }
             dx_f = event.getX() - x_f
             dy_f = event.getY() - y_f
+            if(image_.x < XMAX_f && image_.x > -XMAX_f && image_.y < YMAX_f && image_.y > -YMAX_f)
+            {
+                image_.x = (image_.x + dx_f*0.7).toFloat()
+                image_.y = (image_.y + dy_f*0.7).toFloat()
+            }
+            else
+            {
+                image_.x = X0_f
+                image_.y = Y0_f
+            }
 
-            image_.x = image_.x + dx_f
-            image_.y = image_.y + dy_f
 
             x_f = event.getX()
             y_f = event.getY()
+
+            Log.d("x =", "Value: " + image_.y);
+
+
 
         }
         scale.onTouchEvent(event)
@@ -115,6 +143,10 @@ class SentieroActivity : ComponentActivity() {
         public override fun onScale(gest:ScaleGestureDetector): Boolean
         {
             factor_f += (gest.scaleFactor-1)
+            if(factor_f > MAX_f)
+                factor_f = MAX_f
+            if(factor_f < MIN_f)
+                factor_f = MIN_f
             image_.scaleX = factor_f
             image_.scaleY = factor_f
             return true
