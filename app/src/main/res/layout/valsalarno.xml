@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SentieroActivity">
+
+    <ImageView
+        android:id="@+id/aa"
+        style="@style/imgStyle"
+        android:src="@drawable/valsalarno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        style="@style/cardStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aa">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cardView2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/mappa_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#C1C6BA"
+                    android:text="Mappa"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Accesso:" />
+
+                <TextView
+                    style="@style/textStyle"
+
+                    android:text="Da Malegno, sulla SS 42, raggiunge Bor-
+no, quindi il Lago di Lova (1299 m slm),
+dove si lascia l’auto. Dal lago, seguendo
+il segnavia 82a, si raggiunge il rifugio per
+facile sentiero (1760 m slm, 2h). Se si in-
+tende pernottare, nei mesi estivi conviene
+preannunciare il proprio arrivo.
+Accesso S. Fermo
+Dal Lago di Lova si segue il segnavia 82 che
+si inoltra nella pineta. Il percorso è sempre
+semplice fino al rifugio, adiacente all’omo-
+nima chiesetta seicentesca (circa 2h 40’)." />
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\Ascensioni:" />
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="Una interessante escursione che si può
+fare indifferentemente dai due rifugi è il
+periplo del Pizzo Camino (2491m slm),
+eventualmente prevedendo la salita alla
+panoramica vetta, seguendo i segnavia
+82 e 83. A causa di alcuni tratti friabili ed
+esposti è consigliato solo ad escursionisti
+esperti. Il tour è molto appagante dal punto
+di vista paesaggistico."/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SentieroActivity">
+
+    <ImageView
+        android:id="@+id/aa"
+        style="@style/imgStyle"
+        android:src="@drawable/valliantonio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        style="@style/cardStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aa">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cardView2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/mappa_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#C1C6BA"
+                    android:text="Mappa"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Accesso:" />
+
+                <TextView
+                    style="@style/textStyle"
+
+                    android:text="Sulla SS 39 in direzione Passo dell’Apri-
+ca, subito dopo Corteno Golgi, troviamo il
+bivio per S. Antonio (1124 m slm); da qui,
+seguendo il segnavia 124, in circa 40’ si
+arriva per comodo sentiero al Rifugio Alpini
+di Campovecchio.
+In alternativa, sempre da S. Antonio, si può
+risalire la Val Brandet (segnavia 129) che,
+con quella di Campovecchio, costituisce la
+Riserva Naturale Regionale di S. Antonio." />
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Ascensioni:" />
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="Sia la Val Brandet, sia la Valle di Campo-
+vecchio offrono la possibilità, con un po’ di
+fatica, di essere risalite fino oltre la testata,
+in una serie infinita di paesaggi stupendi.
+In Val Brandet l’escursione al Lago di Picol
+(2378 m slm, circa 4h 30’ da S. Antonio)
+permette di ammirare, in uno scenario
+maestoso, il più grande lago alpino natu-
+rale bresciano; fino a luglio in questo la-
+ghetto galleggiano numerosi iceberg che
+si staccano dalle pendici del Monte Bor-
+ga. Proseguendo in direzione del Passo di
+Torsoleto, vale la pena di visitare gli altri
+omonimi laghetti. In Valle di Campovec-
+chio, sempre risalendo fin oltre le ultime
+malghe, si giunge ai laghetti di Culvegla
+(circa 4h da S. Antonio).
+In circa 30’ si può giungere al Passo del
+Sellero, dove si incrocia il Sentiero 4 Lu-
+glio. Seguendolo ci si può recare al Pas-
+so di Torsoleto da dove ridiscendere per
+la Val Brandet: questo tratto (circa 1h) è
+un po’ esposto ed è quindi sconsigliato a
+chi non sia adeguatamente preparato. Nei
+pressi del Passo c’è il Bivacco Davide che
+permette di spezzare il percorso. Il Bivac-
+co Davide, recentemente risistemato, è
+senz’altro una struttura adatta al neofita."/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SentieroActivity">
+
+    <ImageView
+        android:id="@+id/aa"
+        style="@style/imgStyle"
+        android:src="@drawable/maddalena"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        style="@style/cardStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aa">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cardView2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/mappa_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#C1C6BA"
+                    android:text="Mappa"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Accesso :" />
+
+                <TextView
+                    style="@style/textStyle"
+
+                    android:text="sentieri di accesso alla montagna brescia-
+na per eccellenza sono molto numerosi: ne
+segnaleremo solo alcuni che ci sembrano
+particolarmente interessanti."/>
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Percorso:" />
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="Da via Turati, all’inizio di via Panoramica, si
+segue il segnavia 6 che taglia in vari punti i
+tornanti della Via Panoramica, fino alla bel-
+la chiesa e al chiostro di S. Gottardo (420
+slm, 1h). Proseguendo oltre il capolinea
+del bus R per bellissimo bosco ombroso,
+si raggiungono in sequenza la vecchia sta-
+zione a monte della funivia e il Ristorante
+Cavrelle, capolinea del bus estivo M.
+Da qui brevemente alla Chiesetta di S.
+Maddalena (825 slm, 2h 30’ da via Turati).
+Una variante da S. Gottardo consiste nel
+seguire il segnavia 7 fino a Cascina Mar-
+gherita, quindi per il segnavia 5 si giunge
+in vetta (1h 30’ da S. Gottardo).
+Da S. Eufemia parte il sentiero N° 1, detto
+anche “sentée dei bus”, perché attraversa
+una zona carsica ricca di grotte che giunge
+al Roccolo di Monte Poffa (491 slm, 1h).
+Proseguendo nel bosco, si giunge al rude-
+re dell’ex-Rifugio (844 slm, 2h 30’).
+Un’alternativa, che può essere utilizzataper
+un percorso ad anello, è il sentiero N°
+2 che parte da S. Eufemia (Chiesa Parroc-
+chiale) e risale il ripido crinale, la dorsale
+erbosa che costituisce il fianco occiden-
+tale della Val Carobbio. Il sentiero aggira
+la testata della valle, passando dalla Pozza
+Zezia, fra bei castagni, e prosegue in fal-
+sopiano per immettersi nel N° 1. Si stacca
+subito dopo, nel bosco, e prosegue a sini-
+stra (N°2), risalendo in breve alla Chiesetta
+di Santa Maddalena (2h 30’)."/>
+
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

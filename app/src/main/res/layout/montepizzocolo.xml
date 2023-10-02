@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SentieroActivity">
+
+    <ImageView
+        android:id="@+id/aa"
+        style="@style/imgStyle"
+        android:src="@drawable/montepizzocolo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        style="@style/cardStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aa">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cardView2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/mappa_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#C1C6BA"
+                    android:text="Mappa"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Cenni :" />
+
+                <TextView
+                    style="@style/textStyle"
+
+                    android:text="Il Monte Pizzocolo, per la sua posizione
+relativamente avanzata rispetto all’entro-
+terra gardesano, rappresenta un punto di
+osservazione privilegiato per tutto il Lago
+di Garda. La vista è a 360° sul Garda, le
+Alpi (fino al Monte Rosa) e gli Appennini.
+Nei pressi della vetta si trovano un bivacco
+ed una cappella.
+La roccia calcarea di cui è formato il Mon-
+te Pizzocolo nasconde numerose grotte. Di
+queste, due sono particolarmente interes-
+santi in quanto hanno un microclima con
+temperatura costante tutto l’anno tra i 2°
+ed i 5°C. Si trovano alle falde del Pizzocolo
+e sono dette Giaséra del Val e Giaséra de
+Boschèta d’Archèsane.
+Si segnalano due accessi alternativi rispet-
+to a quello da Passo di Spino."/>
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Percorso:" />
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="Da Toscolano seguire le indicazioni per
+Montemaderno, quindi per strada sterra-
+ta fino a S. Urbano (872 m slm). Seguire
+il segnavia 23 lungo il Dosso del Barbio;
+percorso un traversone sopra i prati “Le
+Prade”si incrocia il segnavia 5 (1352 m
+slm, 1h 30’ da S. Urbano) che viene dal
+Passo di Spino. Sempre da S. Urbano se-
+guire il segnavia 6 fino alla Cascina Ortello
+(770 m slm, 20’); da qui si segue il segna-
+via 11 fino ad una selletta (1469 m slm,
+2h 30’) dove incrociamo il segnavia 5, a
+10’ dalla vetta."/>
+
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

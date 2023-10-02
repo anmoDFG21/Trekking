@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SentieroActivity">
+
+    <ImageView
+        android:id="@+id/aa"
+        style="@style/imgStyle"
+        android:src="@drawable/passocrocedomini"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        style="@style/cardStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aa">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cardView2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/mappa_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#C1C6BA"
+                    android:text="Mappa"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Accesso :" />
+
+                <TextView
+                    style="@style/textStyle"
+
+                    android:text="I rifugi sono sulla SP 345 in prossimità
+del Passo di Crocedomini e quindi sono
+raggiungibili in auto dalla Valle Camonica
+(via Bienno o Breno), dalla Val Trompia (via
+Collio) e dalla Val Sabbia (via Bagolino)."/>
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Percorso:" />
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="Il Rifugio Tassara è aperto tutto l’anno e
+funge, durante la stagione invernale, da
+punto di appoggio per facili escursioni sci
+alpinistiche o per la pratica dello sci di fon-
+do. In estate sono facili e alla portata di tutti
+le escursioni in Val Fredda, un po’ più lun-
+ghe quelle al Monte Frerone, al Rifugio Tita
+Secchi e al Rifugio Gheza (chiedere al CAI
+Darfo per l’apertura). Un interessante giro
+ad anello, con partenza dal Rifugio Tassara,
+si compie risalendo il sentiero con segnavia
+1 fino all’imbocco della Valfredda e, risalita
+brevemente la costa del Monte Mattoni fino
+al prima evidente sella, da questa si piega
+a destra risalendo in cresta e proseguendo
+fino al Monte Bazenina. Da qui, per tracce,
+si scende al Passo di Crocedomini (in tutto
+circa 3h). Il percorso è utilizzabile in inverno
+per entusiasmanti discese con gli sci verso
+Bazena. Dal Rifugio Crocedomini si può fare
+il periplo del Monte Cadino (v. Rifugio Tita
+Secchi) con una variante. Dal rifugio si sale
+per tracce sulla cresta del Monte Bazena
+(2113 m slm, 40’ dal rifugio), quindi si
+segue la cresta verso Nord. In corrispon-
+denza di alcune evidenti rocce calcaree, si
+vedono chiare tracce di sentiero che piega
+a sinistra (NW) raggiungendo il sentiero
+che proviene da Bazena (segnavia 1, 1h
+10’ dal rifugio). Il ritorno per la stessa stra-
+da. Altra ascensione, è quella del Monte
+Frerone (2673 m slm, 2h 30’ dal rifugio).
+Si va al Passo di Valfredda (segnavia 1);
+poco prima, si segue il sentiero sulla si-
+nistra (W). Superato un tratto provvisto di
+cordine (15’ dal passo), il sentiero diventa
+semplice fino alla vetta."/>
+
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SentieroActivity">
+
+    <ImageView
+        android:id="@+id/aa"
+        style="@style/imgStyle"
+        android:src="@drawable/montetorsoleto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        style="@style/cardStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aa">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cardView2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/mappa_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#C1C6BA"
+                    android:text="Mappa"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Accesso:" />
+
+                <TextView
+                    style="@style/textStyle"
+
+                    android:text="Loveno si raggiunge percorrendo la SS 42
+fino a Forno Allione da dove si devia in di-
+rezione del Passo del Vivione. Dopo 10 Km
+si seguono le indicazioni per Loveno (1300
+m slm) dove si lascia l’auto.
+Il segnavia 160 è posto all’inizio dell’abi-
+tato; il sentiero si svolge dapprima nel bo-
+sco, quindi sui pascoli del Monte dei Matti,
+aggirandone la cima. Prima sul versante
+SE, quindi sul versante W, fino ad arrivare
+in cresta. Questa si segue, salendo fino al
+rifugio (2390 m slm, 3h 45’)." />
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Ascensioni:" />
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="La salita al Bivacco Davide posto al Passo
+del Torsoleto (2578 m slm, 40’ dal rifugio)
+permette di spaziare con la vista a 360°
+sul Bernina, la Valtellina, il Monte Rosa ed
+il Cervino.
+Dal passo, per sentiero e sfasciumi, si può
+salire alla vetta del Monte Torsoleto (2708
+m slm, 30’ dal passo). Da questo si può
+proseguire fino al Monte Palone del Torso-
+lazzo (2670 m slm, 1h 30’ dal passo).
+Dal passo è anche possibile proseguire
+fino al Lago di Picol (2378 m slm, 1h 15’
+dal passo, segnavia 129) facendo un po’
+di attenzione alla discesa."/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

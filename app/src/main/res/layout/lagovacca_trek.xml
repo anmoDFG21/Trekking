@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SentieroActivity">
+
+    <ImageView
+        android:id="@+id/aa"
+        style="@style/imgStyle"
+        android:src="@drawable/lagodellavacca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        style="@style/cardStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aa">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cardView2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/mappa_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#C1C6BA"
+                    android:text="Mappa"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Partenza:" />
+
+                <TextView
+                    style="@style/textStyle"
+
+                    android:text="Località Bazena mt. 1802 (Breno) -  raggiungibile in 1 ora e mezza di macchina da Brescia (85 km circa). Dopo aver superato il Lago d’Iseo e essere arrivati in Val Camonica attraverso la comoda Superstrada, prendere l’uscita per Esine e seguire per il Passo Croce Domini. A Bienno (Bs) inizia la salita  e dopo circa 18 km si giunge in Località Bazena mt. 1802 (1,5 km prima del Passo Croce Domini), dove sono ubicati il grosso parcheggio visibile sulla sinistra e il Rifugio Tassara sulla destra" />
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\nPercorso:" />
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="Prendere la strada sterrata chiusa al traffico (segnavia n. 18) che dal grande parcheggio sale in direzione nord. Si arriva così in meno di 45’ nei pressi di Malga Val Fredda mt. 2081, dove termina la strada. Prima di raggiungerla abbandonarla e seguire la mulattiera  (segnavia 18) che sale in direzione nord – est. Per i Bikers esperti questo tratto è percorribile in mountainbike. Poi il sentiero sale costante in direzione nord a mezza costa tagliandondo dapprima il versante sud – ovest del Monte Mattoni mt. 2271 e poi il versante ovest del Monte Cadino mt. 2420. Si perviene così dopo 1 ora e 40’ circa al Passo di Val Fredda mt. 2338, ricompreso tra il Mone Cadino e il Monte Frerone mt. 2673. Si abbandona così la Val Fredda per portarsi in Valle di Cadino. Il sentiero prosegue in discesa in direzione nord – est attraversando il versante sud – est del Monte Frerone mt. 2673. Siamo in una zona dove a fine estate si possono vedere molte stelle Alpine. Successivamente il sentiero piega decisamente verso est e comincia a salire. Il fondo diventa molto sconnesso e  coloro che salgono in mountain bike sono costretti quasi sicuramente a spingere la bici a piedi, praticamente quasi sempre fino al Rifugio. Si giunge così dopo circa 2 ore di cammino al bellissimo Passo della Vacca mt 2359 dove è presente una enorme pietra a forma di Mucca. Da lì si continua diritto su sentiero n. 18 in direzione nord-est che scende al lago della Vacca, divallando poi ancora un poco per passare sotto la diga e risalire quindi al rifugio Tita Secchi mt. 2357, ubicato pochi metri a est del Lago sopra menzionato. Ritorno per il medesimo percorso dell’andata." />
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

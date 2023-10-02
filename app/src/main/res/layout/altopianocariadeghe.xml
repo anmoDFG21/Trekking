@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SentieroActivity">
+
+    <ImageView
+        android:id="@+id/aa"
+        style="@style/imgStyle"
+        android:src="@drawable/cariadeghe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        style="@style/cardStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aa">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cardView2">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/mappa_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#C1C6BA"
+                    android:text="Mappa"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Accesso :" />
+
+                <TextView
+                    style="@style/textStyle"
+
+                    android:text="Da Villa (673 slm), la frazione più alta del
+comune di Serle, per la strada asfaltata,
+seguendo le indicazioni, si giunge rapida-
+mente al parcheggio in prossimità della
+casa e della Chiesetta degli Alpini (780 m
+slm), porta di accesso alla Riserva Naturale
+dell’Altopiano di Cariadeghe. Da qui è pos-
+sibile effettuare una serie di escursioni."/>
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Percorso:" />
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="Salita a S. Bartolomeo.
+Dal parcheggio si prende la stradina a Sud
+che, con qualche tornante, porta in meno
+di 30’ alla chiesetta sulla cima.
+Giro ad anello dell’altopiano.
+Dal parcheggio si imbocca la strada sterrata
+(segnavia 4) e la si percorre sino al
+termine, con leggeri e piacevoli saliscendi
+fra molte doline e boschetti. A destra tro-
+viamo la salita del “Canal del Luf”, fino ad
+incontrare, sotto il Dosso del Lupo,
+il sentiero “Donna Guarnieri” (segnavia
+391). Si raggiunge la cima del M. Ucia
+(1168 slm, 1h 30’), punto più elevato
+dell’intero percorso. Si può salire l’anti-
+stante “Corna de Caì”, caratteristico pinnacolo
+a picco sulla valle, con una breve
+deviazione a sinistra (breve tratto esposto
+con cordina metallica).
+Dal Monte Ucia si prosegue sul crinale con
+un po’ di saliscendi per i dossi boscosi
+delle “Scalette Albere” fino alla sella della
+Bocca di Luf, in prossimità del Roccolo di
+Serle. Si abbandona il segnavia 391 scen-
+dendo a destra su ampio sentiero verso il
+Fienile Rossino e, tenendo sempre la de-
+stra, si giunge alla Cascina del Comune
+(894 slm) in una verde radura.
+Il sentiero prosegue verso Sud fino alla
+strada segnata con il n. 4 che si percorre
+a ritroso, verso sinistra, giungendo in bre-
+ve al parcheggio (3h dalla partenza)."/>
+
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

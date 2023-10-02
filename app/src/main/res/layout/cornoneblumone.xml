@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SentieroActivity">
+
+    <ImageView
+        android:id="@+id/aa"
+        style="@style/imgStyle"
+        android:src="@drawable/cornoneblumone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        style="@style/cardStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aa">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cardView2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/mappa_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#C1C6BA"
+                    android:text="Mappa"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Accesso :" />
+
+                <TextView
+                    style="@style/textStyle"
+
+                    android:text="Da Breno o Esine lungo la SP 345 del Cro-
+cedomini fino a Bazena in auto. Da qui, se-
+guendo il segnavia 1, si supera dapprima il
+dislivello che ci porta in Val Fredda. Quindi
+per comodo sentiero quasi pianeggian-
+te, superato anche il Passo di Val Fredda
+(2321 m slm, 2h) e traversata l’alta Val Ca-
+dino, si giunge al Lago della Vacca e quindi
+al rifugio. Da Bagolino si risale fin oltre la
+Piana del Gaver, a Malga Cadino. Lasciata
+l’auto, per comodo sentiero (segnavia 19)
+si arriva al rifugio in poco meno di 2h."/>
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Percorso:" />
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="La salita al Cornone di Blumone (2842 m
+slm, 2h 30’ dal rifugio) è riservata a chi ab-
+bia un po’ di esperienza in montagna, ma
+è sicuramente emozionante per l’asprez-
+za dei luoghi. Chi abbia dei dubbi, chieda
+al rifugista. Dal rifugio si va al Passo del
+Blumone (segnavia 1). In corrispondenza
+del passo si seguono le tracce evidenti
+sulla destra che risalgono la cresta nord
+del Blumone. Poco sotto la Cima Nord, la
+traccia si porta sul retro (E) della monta-
+gna con un lungo traversone leggermente
+in discesa, risalito un tratto molto ripido si
+giunge alla vetta."/>
+
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

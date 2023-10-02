@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SentieroActivity">
+
+    <ImageView
+        android:id="@+id/aa"
+        style="@style/imgStyle"
+        android:src="@drawable/montevignole"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        style="@style/cardStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aa">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cardView2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/mappa_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#C1C6BA"
+                    android:text="Mappa"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Partenza:" />
+
+                <TextView
+                    style="@style/textStyle"
+
+                    android:text="Seguire le indicazioni per il Lago d’Iseo, imboccare la SP 510 – direzione Darfo Boario Terme – uscita Zone. Continuare fino al centro abitato e seguire successivamente le indicazioni per la Località Cusato S. Antonio.
+Parcheggio in Località Cusato S. Antonio, in Via Trenta Passi oppure in Via Aldo Moro." />
+
+
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\nPercorso:"
+                    />
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="Il percorso inizia dal parcheggio di Via Aldo Moro, dove sono presenti le indicazioni per raggiungere la Corna Trentapassi. Si sale lungo la strada per una trentina di metri e si svolta a sinistra in corrispondenza di un altro piccolo parcheggio, imboccando Via Ciclamino. Si prosegue fino ad un incrocio, dove è presente una santella posta sul muro di sassi di un’abitazione. Qui è necessario svoltare a destra, facendo attenzione ai cartelli che indicano il sentiero per il Monte Vignole, che potrebbero essere poco visibili poiché si confondono sul muro su cui sono posti.
+Dopo una piccola area picnic, si svolta a sinistra e si inizia la ripida salita. Al bivio dove si trovano i cartelli dei sentieri CAI 229 e 229A, si segue il 229, che va a sinistra. Poco dopo, in corrispondenza di una proprietà privata con una casa, è necessario seguire l’indicazione del sentiero posta su un sasso, sulla destra. Si entra quindi in un bosco con roveri, abeti, betulle e qualche carpino. Qui, bisogna prestare attenzione alle indicazioni bianche e rosse poste su un sasso e su una pianta, che indicano che il percorso svolta a destra.
+Fuori dal bosco si incontrano le prime vedute del Lago d’Iseo e di Monte Isola. Continuando la salita si giunge al Forcellino del Gadöl, dove si svolta a destra, seguendo sempre le indicazioni per il Monte Vignole, del quale si intravedono le prime roccette.
+Si inizia quindi a percorrere la cresta del monte, che costituisce la parte più impegnativa, ma allo stesso tempo più scenografica dell’itinerario. Potrebbe essere necessario utilizzare le mani per aggrapparsi alle rocce.
+Raggiunta la vetta, dove è posta una croce, è possibile godersi il meraviglioso panorama sulla Corna Trentapassi, il Monte Guglielmo, il Lago d’Iseo e le Prealpi. Si continua poi a percorrere la cresta e, dopo un piacevole saliscendi, si arriva ad un bivio dove si prosegue a destra, seguendo le indicazioni per il sentiero 229A verso il Comune di Zone. L’itinerario scende nel bosco fino al punto di incontro con il sentiero 229, utilizzato per la salita, che si percorre a ritroso fino ad arrivare al punto di partenza." />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

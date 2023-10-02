@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SentieroActivity">
+
+    <ImageView
+        android:id="@+id/aa"
+        style="@style/imgStyle"
+        android:src="@drawable/rifugionasego"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        style="@style/cardStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aa">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cardView2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/mappa_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#C1C6BA"
+                    android:text="Mappa"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Accesso :" />
+
+                <TextView
+                    style="@style/textStyle"
+
+                    android:text="Una tranquilla escursione effettuabile qua-
+si tutto l’anno, grazie all’esposizione verso
+sud di tutto il percorso, è quella che da
+Lodrino conduce al Rifugio Nasego (1.270
+slm). Partendo dalla Pineta di Lodrino (so-
+pra il paese, indicazioni in loco); il sentiero
+parte nei pressi dell’area pic nic e si svolge
+sempre su sentiero ben tracciato e segna-
+lato fino al rifugio (circa 1h 30’ dalla pi-
+neta). L’accesso dalla Val Sabbia parte da
+Comero di Casto prevede circa 200 m di
+dislivello in più."/>
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="\n Percorso:" />
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="La salita la Monte Palo (1.461 slm, 30’ dal
+rifugio) è paesaggisticamente molto interessante in quanto dalla vetta si gode di un
+magnifico panorama a 360 su tutte le prealpi bresciane. Il sentiero per la vetta passa
+dal forcellino alle spalle del rifugio, si inoltra
+la conca di Nasego e, dalla vecchia baita
+risale le pendici del monte fino alla vetta."/>
+
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
