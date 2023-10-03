@@ -87,8 +87,8 @@ class BresciaActivity : ComponentActivity()
                 newArrayList.add(Montagna(R.drawable.mortirolo,"Altopiano del Mortirolo","3 h","Rifugio Antonioli",
                     "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
 
-                newArrayList.add(Montagna(R.drawable.aquile,"Sentiero delle Aquile","3.5 h","Pozzuolo",
-                    "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
+                //newArrayList.add(Montagna(R.drawable.aquile,"Sentiero delle Aquile","3.5 h","Pozzuolo",
+                //    "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))
 
                 newArrayList.add(Montagna(R.drawable.valmiller,"Val Miller","2.5 h","Ponte del Guat",
                     "https://www.rifugi.lombardia.it/attivita/trekking/punta-almana.html"))

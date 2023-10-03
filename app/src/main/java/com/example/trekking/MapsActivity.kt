@@ -49,14 +49,14 @@ class MapsActivity : ComponentActivity() {
             Image_view.setImageResource(R.drawable.tremtapassi_map)
         else if(trek == "Cima Laione ")
             Image_view.setImageResource(R.drawable.laione_map)
-        //else if(trek == "Lago della Vacca ")
-        //    Image_view.setImageResource(R.drawable.)
+        else if(trek == "Lago della Vacca ")
+            Image_view.setImageResource(R.drawable.lagovacca_map)
         else if(trek == "Rifugio Maria e \n Franco")
             Image_view.setImageResource(R.drawable.rifugio_mariaefranco_map)
         else if(trek == "Monte Vignole")
             Image_view.setImageResource(R.drawable.vignole_map)
-        //else if(trek == "Lago di Lova")
-        //    Image_view.setImageResource(R.drawable.)
+        else if(trek == "Lago di Lova")
+            Image_view.setImageResource(R.drawable.lova_map)
         else if(trek == "Punta Almana")
             Image_view.setImageResource(R.drawable.almana_map)
         else if(trek == "Monte Torsoleto")
@@ -65,68 +65,42 @@ class MapsActivity : ComponentActivity() {
             Image_view.setImageResource(R.drawable.mortirolo_map)
         else if(trek == "Pizzo Camino Camuno")
             Image_view.setImageResource(R.drawable.camuno_map)
-        //else if(trek == "Sentiero delle Aquile")
-        //    Image_view.setImageResource(R.drawable.)
-        //else if(trek == "Valli di S. Antonio")
-        //    Image_view.setImageResource(R.drawable.)
+        else if(trek == "Valli di S. Antonio")
+            Image_view.setImageResource(R.drawable.valliantonio)
         else if(trek == "Val Miller")
             Image_view.setImageResource(R.drawable.adamello_map)
         else if(trek == "Val Salarno")
             Image_view.setImageResource(R.drawable.salarno_map)
-        //else if(trek == "Gruppo del Tredenus")
-        //    Image_view.setImageResource(R.drawable.)
-        //else if(trek == "Il selvaggio\n" +"Passo Dernal")
-        //    Image_view.setImageResource(R.drawable.)
-        //else if(trek == "Cornone di Blumone")
-        //   Image_view.setImageResource(R.drawable.)
-        //else if(trek == "Passo Crocedomini")
-        //    Image_view.setImageResource(R.drawable.)
-        //else if(trek == "Monte Cimosco")
-        //    Image_view.setImageResource(R.drawable.)
-        //else if(trek == "Rifugio Val Trompia")
-        //    Image_view.setImageResource(R.drawable.)
+        else if(trek == "Gruppo del Tredenus")
+            Image_view.setImageResource(R.drawable.tredenus_map)
+        else if(trek == "Il selvaggio\n" +"Passo Dernal")
+            Image_view.setImageResource(R.drawable.dernal_map)
+        else if(trek == "Cornone di Blumone")
+           Image_view.setImageResource(R.drawable.blumone_map)
+        else if(trek == "Passo Crocedomini")
+            Image_view.setImageResource(R.drawable.crocedomini_map)
+        else if(trek == "Monte Cimosco")
+            Image_view.setImageResource(R.drawable.cimoso_map)
+        else if(trek == "Rifugio Val Trompia")
+            Image_view.setImageResource(R.drawable.valtrompia_map)
         else if(trek == "Rifugio Nasego")
             Image_view.setImageResource(R.drawable.rifugio_nasego_map)
         else if(trek == "Monte Pizzocolo")
             Image_view.setImageResource(R.drawable.pizzocolo_map)
         else if(trek == "Altopiano di Cariadeghe")
             Image_view.setImageResource(R.drawable.cariadeghe_map)
-        //else if(trek == "Monte Maddalena")
-        //    Image_view.setImageResource(R.drawable.)
+        else if(trek == "Monte Maddalena")
+            Image_view.setImageResource(R.drawable.maddalena_map)
         else if(trek == "Sentiero dei Fiori")
             Image_view.setImageResource(R.drawable.fiori_map)
         else
             Image_view.setImageResource(R.drawable.fiori_map)
-/*
-        Image_view.setOnClickListener {
-            i++
-            val handler = Handler()
-            handler.postDelayed({
-                if(i==2){
-                    Factor_f=0.5F
-                    Image_view.scaleX = Factor_f
-                    Image_view.scaleY = Factor_f
-                }
-                i=0
-            },500)
 
-        }*/
     }
 
     public override fun onTouchEvent(event: MotionEvent): Boolean
     {
-/*        i++
-        val handler = Handler()
-        handler.postDelayed({
-            if(i==2){
-                Factor_f=0.5F
-                Image_view.scaleX = Factor_f
-                Image_view.scaleY = Factor_f
-                Image_view.x = X0_f
-                Image_view.y = Y0_f
-            }
-            i=0
-        },500)*/
+
 
         if(event.action == MotionEvent.ACTION_DOWN)
         {
